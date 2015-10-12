@@ -1,1 +1,10 @@
-Progress 1.1.1
+Progress 1.1.2 Naming and the Environment
+
+1.1.1
+mathmatical expressions ({symbol} [operands])
+indefinate nesting
+
+(+ (- 45 4) 3 4 5 6)
+
+
+1.1.2 - Naming and the Environment

@@ -8,3 +8,45 @@ indefinate nesting
 
 
 1.1.2 - Naming and the Environment
+
+(define pi 3.14159)
+
+Define is simplest form of abstraction, allows us use names to refer to the result of compound operations.
+
+The global environement is the memory where lisp stores the name=>object pairs
+
+1.1.3 Evaluaing Combinations
+
+             390
+             /|\____________
+            / |             \
+           *  26            15
+              /|\            |
+             / | \         // \\
+            +  2  24      / |  | \
+                  /|\    +  3  5  7
+                 / | \
+                *  4  6
+Special forms
+(define x 3)
+
+syntactic sugar causes cancer of the semi-colon
+
+1.1.4 Compound Procedures
+
+      (define (square    x)         (*      x         x))
+      	 |        |       |           |      |         |
+      	 To     square  something,  multiply  it  by  itself.
+
+      (define (<NAME> <FORMAL PARAMETERS>) <BODY>)
+
+     (define (sum-of-squares x y)
+       (+ (square x) (square y)))
+
+     (define (f a)
+       (sum-of-squares (+ a 1) (* a 2)))
+
+     (f 5)
+     136
+
+1.1.5 The Substitution Model for Procedure Application
